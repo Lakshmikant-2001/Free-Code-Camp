@@ -13,7 +13,7 @@
 <body>
     <div id="title-container">
         <h1 id="title">FreeCodeCamp Survey Form</h1>
-        <p id="title-description">Thank you for taking the time to help us improve the platform</p>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
     </div>
 
    <div id="main-container">
@@ -24,10 +24,10 @@
                     </div>
                     <div class="questions">
                         <label id="email-label" for="email">Email:</label><br>
-                        <input class="txt"" id="email" type="email" name="name" placeholder="Enter you email address" required>
+                        <input class="txt" id="email" type="email" name="name" placeholder="Enter you email address" required>
                     </div>
                     <div class="questions">
-                        <label id="number-labe" for="number">Age:</label><br>
+                        <label id="number-label" for="number">Age:</label><br>
                         <input class="txt" id="number" type="number" name="age" placeholder="Age" min="18" max="100">
                     </div>
                     <div class="questions">
@@ -39,14 +39,14 @@
                                 <option>Full time Job</option>
                                 <option>Full time Leaner</option>
                                 <option>Other</option>
-                                <option>prefer not to say</option>
+                                <option>Prefer not to say</option>
                             </select>
                         </div>
                     </div>
                     <div class="questions">
                         <p class="psel">Would you recommend freeCodeCamp to a friend?</p>
                         <div>
-                            <label class="txt" for="definitely">
+                            <label  for="definitely">
                                 <input id="definitely" type="radio" name="feature" value="definitely">Definitely</label>
                         </div>
                         <div>
@@ -65,7 +65,7 @@
                         <div>
                             <select class="txt" id="dropdown2">
                                 <option disabled>Select an option</option>
-                                <option>challenges</option>
+                                <option>Challenges</option>
                                 <option>Projects</option>
                                 <option>Community</option>
                                 <option>Open Source</option>
@@ -78,17 +78,17 @@
                         <div>
                             <label for="front-end-projects">
                                 <input id="front-end-projects" type="checkbox" name="improved"
-                                    value="front-end-projects">front-end-projects</label>
+                                    value="front-end-projects">Front End Projects</label>
                         </div>
                         <div>
                             <label for="back-end-projects">
                                 <input id="back-end-projects" type="checkbox" name="improved"
-                                    value="back-end-projects">back-end-projects</label>
+                                    value="back-end-projects">Back End Projects</label>
                         </div>
                         <div>
                             <label for="data-visualizaion">
                                 <input id="data-visualizaion" type="checkbox" name="improved"
-                                    value="data-visualizaion">data-visualizaion</label>
+                                    value="data-visualizaion">Data Visualizaion</label>
                         </div>
                         <div>
                             <label for="Challenges">
@@ -102,9 +102,7 @@
                         </div>
                         <div>
                             <label for="gitter-help-rooms">
-                                <input id="gitter-help-rooms" type="checkbox" name="improved" value="gitter-help-rooms">Gitter
-                                help
-                                rooms</label>
+                                <input id="gitter-help-rooms" type="checkbox" name="improved" value="gitter-help-rooms">Gitter help rooms</label>
                         </div>
                         <div>
                             <label for="videos">
@@ -112,8 +110,7 @@
                         </div>
                         <div>
                             <label for="city-meetups">
-                                <input id="city-meetups" type="checkbox" name="improved" value="city-meetups">City
-                                Meetups</label>
+                                <input id="city-meetups" type="checkbox" name="improved" value="city-meetups">City Meetups</label>
                         </div>
                         <div>
                             <label for="wiki">
@@ -138,10 +135,11 @@
                         </div>
                     </div>
                     <div id="button-div">
-                        <button id="button" class="txt" type="submit"><b>SUBMIT</b></button>
+                        <button id="submit" class="txt" type="submit"><b>SUBMIT</b></button>
                     </div>
         </form>
    </div>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
