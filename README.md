@@ -1,6 +1,7 @@
 # My Free-Code-Camp Projects!!!
-![image](https://user-images.githubusercontent.com/76929974/125455086-3b5c5ab6-2597-4e69-8885-8755f938fdbd.png=10x10)
 
+[image]<img src="https://user-images.githubusercontent.com/76929974/125454882-6474abef-08a7-48e0-b78c-b59f1a46c878.png" width="400" height="790">
 
 
 [Build a Tribute Page](https://lakshmikant-2001.github.io/Free-Code-Camp/Tribute-Page.html)
+
