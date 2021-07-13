@@ -1,60 +1,59 @@
-#main{
-    background:linear-gradient(80deg,#E3E7EC,#E1ECF7,#B3C3D4,#B3CFEC,#7089A4);
-    text-color:#000000;
-    border:10px solid;
-    border-image:url(https://drafts.csswg.org/css-backgrounds-4/images/multicolor-border-dotted.png)  30 stretch;
+#main {
+    background: linear-gradient(80deg, #E3E7EC, #E1ECF7, #B3C3D4, #B3CFEC, #7089A4);
+    text-color: #000000;
+    border: 10px solid;
+    border-image: url(https://drafts.csswg.org/css-backgrounds-4/images/multicolor-border-dotted.png) 30 stretch;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
 }
 
-#title{
+#title {
     font-family: 'Encode Sans SC', sans-serif;
-    font-size:60px;
-    margin-bottom:20px;
-}
-h5{
-    text-align:center;
-    font-size:30px;
-    font-family: 'Encode Sans SC', sans-serif;
-    margin-top:0px;
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
-#img-div{
+h5 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Encode Sans SC', sans-serif;
+    margin-top: 0px;
+}
+
+#img-div {
     background-color: #ffffff;
-    height:15%;
-    width:65%;
-    margin: 0 auto;   
-    border-radius:10px; 
-    padding:70px 0px 30px 0px;
-    box-shadow:0 8px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    height: 15%;
+    width: 65%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 70px 0px 30px 0px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
-#image{  
-    display:block;
-    width:80%;
-    max-width:100%;
+#image {
+    display: block;
+    width: 80%;
+    max-width: 100%;
     height: auto;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-#img-caption{
-    font-size:20px;
+#img-caption {
+    font-size: 20px;
 }
 
-#tribute-info{
-    width:80%;
-    height:auto; 
-    margin:0 auto;
-    text-align:justify;
-    font-size:20px;
+#tribute-info {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 20px;
 }
 
-#tribute-link{
-    color:rgb(116, 102, 76);
+#tribute-link {
+    color: rgb(116, 102, 76);
 }
-
 
 /* #image{  
     width:80%;
 }  */
-   
