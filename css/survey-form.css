@@ -6,6 +6,7 @@ body{
     background-attachment:fixed;
     backdrop-filter: blur(20px);
     color:#181812;
+    margin:0;
 }
 
 #title-container{
