@@ -64,3 +64,18 @@ body{
     background-color: white;
 }
 
+@media screen and (max-width: 490px) {
+     #title{
+    font-size:6vw;
+    }
+}
+
+
+@media screen and (max-width: 490px) {
+    #description{
+   font-size:5vw;
+   }
+}
+
+
+
