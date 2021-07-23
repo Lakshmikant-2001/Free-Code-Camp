@@ -120,7 +120,7 @@ body {
 .features img {
     width:35vw;
     animation: features-watch-image 2s forwards;
-    min-width: 350px;
+    min-width: 410px;
 }
 
 @keyframes features-watch-image {
@@ -142,7 +142,7 @@ body {
 }
 
 .features-list div{
-    font-size:1.5rem;
+    font-size:1.7rem;
     margin-bottom:1rem;
     display:flex;
 }
@@ -277,8 +277,8 @@ body {
 .pricing-child {
     display: flex;
     width: 25%;
-    min-width: 320px;
-    height:360px;
+    min-width: 340px;
+    height:480px;
     margin: 1.5rem;
     padding: 1rem 1rem 0 1rem;
     padding-bottom: 0;
@@ -316,7 +316,7 @@ body {
     margin:1rem;
     list-style-type: none;
     text-align: center;
-    font-size:1.2rem;
+    font-size:1.4rem;
 }
 
 .pricing-child li{
@@ -326,9 +326,9 @@ body {
 .footer-div {
     width: 100%;
     text-align:center;
-    background-color: #1A8FE3;
+    background-color: #00008b;
     color: white;
-    height: 70px;
+    height:7rem;
     font-size:1.5rem;
     padding:1rem 0 5rem 0;
 }
