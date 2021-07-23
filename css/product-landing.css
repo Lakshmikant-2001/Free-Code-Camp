@@ -107,7 +107,7 @@ body {
 }
 
 .input-div button:hover {
-    background-color:#FCA31125;
+    background-color:#00000095;
 }
 
 .features-div{
@@ -138,21 +138,23 @@ body {
 .features-list{
     display:flex;
     flex-direction:column;
-    padding-left:2rem;
+    padding-lef:1rem;
 }
 
 .features-list div{
-    font-size:1.7rem;
+    font-size:2rem;
     margin-bottom:1rem;
     display:flex;
+    padding-bottom:1rem;
 }
 .features-list img{
     width:10%;
-    max-width:70px;
+    max-width:100px;
     min-width:20px;
     color:blue;
     margin-right:1.5rem;
 }
+
 
 
 .video{
@@ -304,7 +306,7 @@ body {
 
 .pricing-child img {
     width: 100%;
-    height: 50%;
+    height: 60%;
     padding-bottom:1.5rem;
 }
 
@@ -324,13 +326,15 @@ body {
 }
 
 .footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
     width: 100%;
     text-align:center;
-    background-color: #00008b;
+    background-color: #0d0f27;
     color: white;
-    height:7rem;
-    font-size:1.5rem;
-    padding:1rem 0 5rem 0;
+    height:10rem;
+    font-size:1.7rem;
 }
 
 .footer-div a{
@@ -339,11 +343,38 @@ body {
     color:white;
 }
 
-.footer-div p{
-    padding-top:.5rem;
+.footer-div div{
+    display: flex;
+    justify-content: center;
 }
-@media screen  {
-    
+ .footer-img{
+     width:1.7rem;
+     padding: 3px;
+ }
+
+@media screen and (max-width: 660px)  {
+    .features-list div{
+        font-size:1.5rem;
+        padding-left:2rem;
+    }
+
+  #nav-bar{
+      display:inline;
+      font-size: 1.5rem;
+      margin:0;
+      padding:0;
+  }
+  .branding-div{
+      padding:.5rem;
+  }
+  .branding-div,.nav-link-div a,.footer-div{
+      font-size:1.3rem;
+  }
+  .nav-link-div{
+        padding:0 1rem;  
+  }
+  .input-div{
+      padding-top:10rem;
+    }
+
 }
-
-
