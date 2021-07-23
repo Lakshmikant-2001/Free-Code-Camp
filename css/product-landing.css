@@ -280,7 +280,6 @@ body {
     display: flex;
     width: 25%;
     min-width: 340px;
-    height:480px;
     margin: 1.5rem;
     padding: 1rem 1rem 0 1rem;
     padding-bottom: 0;
@@ -307,7 +306,7 @@ body {
 .pricing-child img {
     width: 100%;
     height: 60%;
-    padding-bottom:1.5rem;
+ 
 }
 
 .pricing-child hr{
