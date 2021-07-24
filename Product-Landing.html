@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/87e71d54fb.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/lk-logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Tourney&display=swap" rel="stylesheet">
     <title>Product Landing</title>
 </head>
@@ -17,34 +18,29 @@
     <header id="header">
         <nav id="nav-bar">
             <div class="branding-div">
-                <img src="images/watch.png" alt="" id="header-image">
+                <img src="images/watch.png" alt="" id="header-img">
                 <h1>LK</h1>
             </div>
             <div class="nav-link-div">
                 <ul>
-                    <li><a href="#1" class="nav-links">Features</a></li>
-                    <li><a href="#2" class="nav-links">Review</a></li>
-                    <li><a href="#3" class="nav-links">Comparision</a></li>
+                    <li><a href="#1" class="nav-link">Features</a></li>
+                    <li><a href="#2" class="nav-link">Review</a></li>
+                    <li><a href="#3" class="nav-link">Comparision</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div class="semi-circle-div">
-        <div class="semi-circle-1"></div>
-        <div class="semi-circle-2"></div>
-    </div>
-    <div class="semi-circle-3"></div>
-    <div class="semi-circle-4"></div>
+
     <div class="input-div">
         <div>
             <p>The future of health is on your wrist!</p>
         </div>
-        <form method="POST" action="https://www.freecodecamp.com/email-submit">
+        <form id="form" method="POST" action="https://www.freecodecamp.com/email-submit">
             <div>
-                <input type="email" placeholder="Enter you email address" required>
+                <input id="email" type="email" name="email" placeholder="Enter you email address" required>
             </div>
             <div>
-                <button id="submit" type="submit">GET STARTED</button>
+                <input id="submit" value="GET STARTED" type="submit">
             </div>
         </form>
     </div>
@@ -70,7 +66,7 @@
     </div>
 
     <div class="video" id="3">
-        <iframe src="https://www.youtube.com/embed/Mm0NvlXdz4A" title="YouTube video player"
+        <iframe id="video" src="https://www.youtube.com/embed/Mm0NvlXdz4A" title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>
@@ -113,14 +109,15 @@
             <div>
                 <a href="#">Privacy</a>
                 <a href="#">Terms</a>
-                <a href="#">Contact</a>
+                <a href="https://github.com/Lakshmikant-2001" target="blank">Contact</a>
             </div>
-            <div>   
+            <div>
                 <img class="footer-img" src="images/copyright.png" alt="">
                 <p> Copyright - LK</p>
             </div>
         </div>
     </footer>
 </body>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 
 </html>

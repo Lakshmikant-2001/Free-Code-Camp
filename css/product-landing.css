@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body {
     color: black;
     width:100%;
@@ -57,7 +61,7 @@ body {
     background-color: #E6991D;
 }
 
-#header-image {
+#header-img {
     width: 40px;
     height: 40px;
 }
@@ -85,7 +89,7 @@ body {
     width: 100%;
 }
 
-.input-div input, button {
+.input-div input {
     height: 50px;
     width: 30%;
     min-width: 300px;
@@ -94,7 +98,7 @@ body {
     border: black solid 2px;
 }
 
-.input-div button {
+#submit {
     width: 15%;
     height: 40px;
     min-width: 150px;
@@ -108,7 +112,7 @@ body {
     border: #FCA311 solid 2px;
 }
 
-.input-div button:hover {
+#submit:hover {
     background-color:#FCA31150;
 }
 
@@ -173,105 +177,6 @@ body {
     min-width:340px;
     min-height: 200px;
 }
-
-
-/* .semi-circle-1 {
-    position: absolute;
-    top: 50%;
-    right: -80px;
-    transform: translate(-50%, -50%);
-    height: 100px;
-    width: 200px;
-    border-radius: 150px 150px 0 0;
-    background-color: #FCA311;
-    transform: rotate(270deg);
-    z-index: -1;
-    border: #000000 solid 10px;
-    animation: top-down-right 3s infinite linear;
-}
-
-.semi-circle-2 {
-    position: absolute;
-    top: 50%;
-    right: -100px;
-    transform: translate(-50%, -50%);
-    height: 100px;
-    width: 200px;
-    border-radius: 150px 150px 0 0;
-    background-color: blue;
-    transform: rotate(270deg) scale(0.5);
-    z-index: -1;
-    border: #000000 solid 15px;
-    animation: top-down-right 3s infinite linear ;
-}
-
-.semi-circle-3 {
-    position: absolute;
-    top: 150%;
-    left: -80px;
-    transform: translate(-50%, -50%);
-    height: 100px;
-    width: 200px;
-    border-radius: 150px 150px 0 0;
-    background-color: #FCA311;
-    transform: rotate(90deg);
-    z-index: -1;
-    border: #000000 solid 10px;
-    animation: top-down-left 3s infinite linear;
-}
-
-
-.semi-circle-4 {
-    position: absolute;
-    top: 150%;
-    left: -100px;
-    transform: translate(-50%, -50%);
-    height: 100px;
-    width: 200px;
-    border-radius: 150px 150px 0 0;
-    background-color: blue;
-    transform: rotate(90deg) scale(0.5);
-    z-index: -1;
-    border: #000000 solid 15px;
-    animation: top-down-left 3s infinite linear;
-}
-
-
-@keyframes top-down-right {
-    0% {
-        top:0%;
-    }
-    25% {
-        top:50%
-    }
-    50% {
-        top:100%
-    }
-    75% {
-        top:50%
-    }
-    100%{
-        top:0%;
-    }
-}
-
-@keyframes top-down-left {
-    0% {
-        top:101%;
-    }
-    25% {
-        top:151%
-    }
-    50% {
-        top:201%
-    }
-    75% {
-        top:151%
-    }
-    100%{
-        top:101%;
-    }
-} */
 
 .pricing {
     display: flex;
@@ -381,6 +286,5 @@ body {
   }
   .input-div{
       padding-top:8rem;
-    }
-
+    }  
 }
