@@ -260,6 +260,20 @@ body {
      padding: 3px;
  }
 
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+    
+::-webkit-scrollbar-thumb {
+    background: #1A8FE3;
+   
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FCA311;
+  }
+
 @media screen and (max-width: 660px)  {
     .features-list div{
         font-size:1.5rem;
