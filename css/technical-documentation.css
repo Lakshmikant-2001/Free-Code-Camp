@@ -5,3 +5,30 @@
     padding: 0;
     margin:0;
 }
+body{
+    font-family: 'Georama', sans-serif;
+}
+body a{
+    text-decoration: none;
+}
+#navbar{
+    width:300px;
+    height: 100vh;
+    overflow:hidden;
+    margin:1rem;
+    white-space: nowrap;
+}
+
+#navbar:hover,#navbar:focus{
+    overflow:scroll;
+}
+
+.nav-link-div{
+    display:flex;
+    flex-direction: column;
+    padding:1rem;
+}
+
+.nav-link{
+    padding:1rem 0.5rem;
+}
