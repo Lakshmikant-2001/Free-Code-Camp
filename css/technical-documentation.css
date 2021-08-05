@@ -5,23 +5,51 @@
     padding: 0;
     margin:0;
 }
+
 body{
     font-family: 'Georama', sans-serif;
+    height:200vh;
+    /* background-color:#000; */
+    /* color:#00B1D2FF; */
 }
+
 body a{
     text-decoration: none;
 }
+
+.body-header{
+    width: 100%;
+    padding:1rem;   
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 5;
+    margin:0 0 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.body-header img{
+    width:80px;
+}
 #navbar{
     width:300px;
-    height: 100vh;
+    height: 90vh;
     overflow:hidden;
     margin:1rem;
     white-space: nowrap;
+    position:fixed;
+    top:70px;
+    left:0;
 }
 
 #navbar:hover,#navbar:focus{
-    overflow:scroll;
+    overflow-y:scroll;
 }
+
+
+
 
 .nav-link-div{
     display:flex;
@@ -31,4 +59,67 @@ body a{
 
 .nav-link{
     padding:1rem 0.5rem;
+    margin-bottom: 5px;
+    /* color:#FDDB27FF; */
+    /* background-color:#FF4F58FF; */
+}
+
+#main-doc{
+    display:flex;
+    position:absolute;
+    top:80px;
+    left:320px;
+    margin:1rem;
+    padding:1.5rem;
+    width:60%;
+    min-width:700px;
+    /* background-color: #00B1D2FF;
+    color:#000; */
+}
+
+.main-section{
+    font-size: 1rem;
+}
+
+.main-section header{
+    font-size:2.5rem;
+    font-weight: 5px;
+    margin-bottom: 2rem;
+}
+.main-ind-topic>p{
+    margin-bottom:1rem;
+}
+.main-ind-topic>h3{
+    font-size:1.5rem;
+    margin-bottom:1.5rem;
+    border-bottom:1px solid ;
+    padding-bottom:1rem;
+}
+
+.syntax-div{
+    margin:2rem 1.5rem;
+    padding:1.5rem;
+    background-color: black;
+    color:white;
+}
+
+.example-div{
+    margin:2rem 0;
+}
+
+.example-div h4{
+    font-size:1.3rem;
+    margin:1rem 0;
+}
+
+.example-div pre{
+    margin:2rem 1.5rem;
+    padding:2rem 1rem;
+    background-color: black;
+    color:white;
+}
+
+.btn{
+    padding:0.5rem 1rem;
+    margin:0 2rem;
 }
