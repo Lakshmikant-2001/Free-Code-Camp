@@ -9,8 +9,6 @@
 body{
     font-family: 'Georama', sans-serif;
     height:200vh;
-    /* background-color:#000; */
-    /* color:#00B1D2FF; */
 }
 
 body a{
@@ -28,16 +26,17 @@ body a{
     display: flex;
     justify-content: left;
     align-items: center;
+    background-color: #000;
 }
 
 .body-header img{
-    width:80px;
+    width:80px; 
 }
+
 #navbar{
     width:300px;
-    height: 90vh;
+    height: 92vh;
     overflow:hidden;
-    margin:1rem;
     white-space: nowrap;
     position:fixed;
     top:70px;
@@ -48,21 +47,20 @@ body a{
     overflow-y:scroll;
 }
 
-
-
-
 .nav-link-div{
     display:flex;
     flex-direction: column;
-    padding:1rem;
+    padding:1rem 1rem 1rem 0;
 }
 
 .nav-link{
-    padding:1rem 0.5rem;
+    padding:1rem;
     margin-bottom: 5px;
-    /* color:#FDDB27FF; */
-    /* background-color:#FF4F58FF; */
+    color:#000;
 }
+
+
+/* ----- main-document start ------  */
 
 #main-doc{
     display:flex;
@@ -73,12 +71,17 @@ body a{
     padding:1.5rem;
     width:60%;
     min-width:700px;
-    /* background-color: #00B1D2FF;
-    color:#000; */
+    /* background-color: ; */
+    color:#000;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.5);
+
 }
 
 .main-section{
     font-size: 1rem;
+    margin-bottom:2rem;
 }
 
 .main-section header{
@@ -99,8 +102,8 @@ body a{
 .syntax-div{
     margin:2rem 1.5rem;
     padding:1.5rem;
-    background-color: black;
-    color:white;
+    background-color:#ffd93030 ;
+    border-left:5px solid #ff307c;
 }
 
 .example-div{
@@ -115,11 +118,20 @@ body a{
 .example-div pre{
     margin:2rem 1.5rem;
     padding:2rem 1rem;
-    background-color: black;
-    color:white;
+    background-color:#ffd93030 ;
+    border-left:5px solid #ff307c;
+
 }
 
 .btn{
     padding:0.5rem 1rem;
     margin:0 2rem;
+    background-color:#ff307c;  
+    border:unset;
+    border-radius:.5rem;
+}
+
+.btn a{
+    color:white;
+    font-size: 1rem;
 }
