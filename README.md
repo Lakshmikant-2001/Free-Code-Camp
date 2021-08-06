@@ -11,4 +11,5 @@
         <a href="https://fcc-web.netlify.app/Survey-Form.html">Survey Form</a>
     </li>
     <li><a href="https://fcc-web.netlify.app/Product-Landing.html">Product Landing</a></li>
+    <li><a href="https://fcc-web.netlify.app/Technical-Documentation.html">Technical Documentation</a></li>
 </ul>
