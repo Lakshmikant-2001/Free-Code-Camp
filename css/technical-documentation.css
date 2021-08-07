@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Georama', sans-serif;
+    overflow-x: hidden;
 }
 
 body a {
