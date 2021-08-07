@@ -3,9 +3,7 @@
     padding: 0;
     margin: 0;
 }
-html{
-    overflow-x: hidden;
-}
+
 body {
     font-family: 'Georama', sans-serif;
     overflow-x: hidden;
@@ -145,7 +143,13 @@ body a {
 .main-ind-topic>pre{
     white-space: pre-wrap;
 }
-
+.main-ind-topic>h4{
+    font-size: 1.5rem;
+    margin:3rem 0 1rem;
+    font-weight: 1px;
+    padding-bottom: .5rem;
+    text-decoration: underline #00000050;
+}
 .syntax-div {
     margin: 2rem 1.5rem;
     padding: 1.5rem;

@@ -259,7 +259,7 @@ echo "I love $txt!";
                 <p>The echo statement can be used with or without parentheses: echo or echo().</p>
                 <div class="example-div">
                     <h4>Example</h4>
-<pre>
+                    <pre>
 &lt?php
 echo "&lth2>PHP is Fun!&lt/h2>";
 echo "Hello world!&ltbr>";
@@ -276,7 +276,7 @@ echo "This ", "string ", "was ", "made ", "with multiple parameters.";
                 <p>The print statement can be used with or without parentheses: print or print().</p>
                 <div class="example-div">
                     <h4>Example</h4>
-<pre>
+                    <pre>
 &lt?php
 print "&lth2>PHP is Fun!&lt/h2>";
 print "Hello world!&ltbr>";
@@ -312,7 +312,7 @@ print "I'm about to learn PHP!";
                 <P>A string can be any text inside quotes. You can use single or double quotes:</P>
                 <div class="example-div">
                     <h4>Example</h4>
-<pre>
+                    <pre>
 &lt?php
 $x = "Hello world!";
 $y = 'Hello world!';
@@ -322,37 +322,45 @@ echo "&ltbr>";
 echo $y;
 ?>
 </pre>
-                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_datatypes_string" target="_blank">Try it yourself</a></button>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_datatypes_string"
+                            target="_blank">Try it yourself</a></button>
                 </div>
             </div>
             <div class="main-ind-topic">
                 <h3>PHP Integer</h3>
                 <p>An integer data type is a non-decimal number between -2,147,483,648 and 2,147,483,647.</p>
-                <P>In the following example $x is an integer. The PHP var_dump() function returns the data type and value:</P>
+                <P>In the following example $x is an integer. The PHP var_dump() function returns the data type and
+                    value:</P>
                 <div class="example-div">
                     <h4>Example</h4>
-<pre>
+                    <pre>
 &lt?php
 $x = 5985;
 var_dump($x);
 ?>
 </pre>
-                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_datatypes_integer" target="_blank">Try it yourself</a></button>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_datatypes_integer"
+                            target="_blank">Try it yourself</a></button>
                 </div>
             </div>
             <div class="main-ind-topic">
                 <h3>PHP Float</h3>
                 <p>A float (floating point number) is a number with a decimal point or a number in exponential form.</p>
-                <P>In the following example $x is a float. The PHP var_dump() function returns the data type and value:</P>
+                <P>In the following example $x is a float. The PHP var_dump() function returns the data type and value:
+                </P>
                 <div class="example-div">
                     <h4>Example</h4>
-<pre>
+                    <pre>
 &lt?php
 $x = 10.365;
 var_dump($x);
 ?>
 </pre>
-                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_datatypes_float" target="_blank">Try it yourself</a></button>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_datatypes_float"
+                            target="_blank">Try it yourself</a></button>
                 </div>
             </div>
             <div class="main-ind-topic">
@@ -360,7 +368,7 @@ var_dump($x);
                 <p>A Boolean represents two possible states: TRUE or FALSE.</p>
                 <div class="example-div">
                     <h4>Example</h4>
-<pre>
+                    <pre>
 $x = true;
 $y = false;
 </pre>
@@ -369,26 +377,30 @@ $y = false;
             <div class="main-ind-topic">
                 <h3>PHP Array</h3>
                 <p>An array stores multiple values in one single variable.</p>
-                <P>In the following example $cars is an array. The PHP var_dump() function returns the data type and value:</P>
+                <P>In the following example $cars is an array. The PHP var_dump() function returns the data type and
+                    value:</P>
                 <div class="example-div">
                     <h4>Example</h4>
-<pre>
+                    <pre>
 &lt?php
 $cars = array("Volvo" ,"BMW", "Toyota");
 var_dump($cars);
 ?>
 </pre>
-                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_datatypes_array" target="_blank">Try it yourself</a></button>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_datatypes_array"
+                            target="_blank">Try it yourself</a></button>
                 </div>
             </div>
             <div class="main-ind-topic">
                 <h3>PHP Object</h3>
                 <p>Classes and objects are the two main aspects of object-oriented programming.</p>
                 <P>A class is a template for objects, and an object is an instance of a class.</P>
-                <P>If you create a __construct() function, PHP will automatically call this function when you create an object from a class.</P>
+                <P>If you create a __construct() function, PHP will automatically call this function when you create an
+                    object from a class.</P>
                 <div class="example-div">
                     <h4>Example</h4>
-<pre>
+                    <pre>
 &lt?php
 class Car {
     public $color;
@@ -409,7 +421,9 @@ $myCar = new Car("red", "Toyota");
 echo $myCar -> message();
 ?>
 </pre>
-                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_datatypes_object" target="_blank">Try it yourself</a></button>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_datatypes_object"
+                            target="_blank">Try it yourself</a></button>
                 </div>
             </div>
             <div class="main-ind-topic">
@@ -419,67 +433,276 @@ echo $myCar -> message();
                 <p>Variables can also be emptied by setting the value to NULL:</p>
                 <div class="example-div">
                     <h4>Example</h4>
-<pre>
+                    <pre>
 &lt?php
 $x = "Hello world!";
 $x = null;
 var_dump($x);
 ?>
 </pre>
-                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_datatypes_null" target="_blank">Try it yourself</a></button>
-                </div>
-            </div>
-        </section>
-<!-- 
-        <section class="main-section">
-            <header id=#Php_Strings"></header>
-            <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
-                <div class="example-div">
-                    <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_datatypes_null"
+                            target="_blank">Try it yourself</a></button>
                 </div>
             </div>
         </section>
 
         <section class="main-section">
-            <header id="Php_Numbers"></header>
+            <header id="Php_Strings">PHP Strings</header>
             <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
+                <h3>PHP String Functions</h3>
+                <p>In this chapter we will look at some commonly used functions to manipulate strings.</p>
+            </div>
+            <div class="main-ind-topic">
+                <h4>strlen() - Return the Length of a String</h4>
+                <p>The PHP strlen() function returns the length of a string.</p>
                 <div class="example-div">
                     <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
+                    <P>Return the length of the string "Hello world!":</P>
+<pre>
+&lt?php
+echo strlen("Hello world!"); // outputs 12
+?>
+</pre>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_string_length"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h4>str_word_count() - Count Words in a String</h4>
+                <p>The PHP str_word_count() function counts the number of words in a string.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <P>The PHP str_word_count() function counts the number of words in a string.</P>
+<pre>
+&lt?php
+echo str_word_count("Hello world!"); // outputs 2
+?>
+</pre>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_string_word_count"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h4>strrev() - Reverse a String</h4>
+                <p>The PHP strrev() function reverses a string.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <P>Reverse the string "Hello world!":</P>
+<pre>
+    &lt?php
+echo strrev("Hello world!"); // outputs !dlrow olleH
+?>
+</pre>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_string_reverse"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h4>strpos() - Search For a Text Within a String</h4>
+                <p>The PHP strpos() function searches for a specific text within a string. If a match is found, the
+                    function returns the character position of the first match. If no match is found, it will return
+                    FALSE.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <p>Search for the text "world" in the string "Hello world!":</p>
+<pre>
+&lt?php
+echo strpos("Hello world!", "world"); // outputs 6
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_string_pos"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h4>str_replace() - Replace Text Within a String</h4>
+                <p>The PHP str_replace() function replaces some characters with some other characters in a string.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <p>Replace the text "world" with "Dolly":</p>
+<pre>
+&lt?php
+echo str_replace("world", "Dolly", "Hello world!"); // outputs Hello Dolly!
+?>
+</pre>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_string_replace"
+                            target="_blank">Try it yourself</a></button>
                 </div>
             </div>
         </section>
 
         <section class="main-section">
-            <header id="Php_Math"></header>
+            <header id="Php_Numbers">PHP Numbers</header>
             <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
+                <h3>PHP Numbers</h3>
+                <p>One thing to notice about PHP is that it provides automatic data type conversion.</p>
+                <p>So, if you assign an integer value to a variable, the type of that variable will automatically be an
+                    integer. Then, if you assign a string to the same variable, the type will change to a string.</p>
+                <p>This automatic conversion can sometimes break your code.</p>
+            </div>
+
+            <div class="main-ind-topic">
+                <h4>PHP Integers</h4>
+                <p>An integer is a number without any decimal part</p>
+                <P>An integer data type is a non-decimal number between -2147483648 and 2147483647 in 32 bit systems,
+                    and between -9223372036854775808 and 9223372036854775807 in 64 bit systems. A value greater (or
+                    lower) than this, will be stored as float, because it exceeds the limit of an integer.</P>
                 <div class="example-div">
                     <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
+                    <p>Check if the type of a variable is integer:</p>
+<pre>
+&lt?php
+$x = 5985;
+var_dump(is_int($x));
+
+$x = 59.85;
+var_dump(is_int($x));
+?>
+</pre>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_numbers_integer"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h4>PHP Floats</h4>
+                <p>A float is a number with a decimal point or a number in exponential form.</p>
+                <p>e float data type can commonly store a value up to 1.7976931348623E+308 (platform dependent), and
+                    have a maximum precision of 14 digits.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <p>Check if the type of a variable is float:</p>
+<pre>
+&lt?php
+$x = 10.365;
+var_dump(is_float($x));
+?>
+</pre>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_numbers_float"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h4>PHP Infinity</h4>
+                <p>A numeric value that is larger than PHP_FLOAT_MAX is considered infinite.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <p>Check if a numeric value is finite or infinite:</p>
+<pre>
+&lt?php
+$x = 1.9e411;
+var_dump($x);
+?>
+</pre>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_numbers_infinite"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h4>PHP NaN</h4>
+                <p>NaN stands for Not a Number.</p>
+                <p>NaN is used for impossible mathematical operations.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <p>Invalid calculation will return a NaN value:</p>
+<pre>
+&lt?php
+$x = acos(8);
+var_dump($x);
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_numbers_nan"
+                            target="_blank">Try it yourself</a></button>
                 </div>
             </div>
         </section>
 
         <section class="main-section">
+            <header id="Php_Math">PHP Math</header>
+            <div class="main-ind-topic">
+                <h4>PHP pi() Function</h4>
+                <p>The pi() function returns the value of PI:</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+<pre>
+&lt?php
+echo(pi()); // returns 3.1415926535898
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_math_pi"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h4>PHP min() and max() Functions</h4>
+                <p>The min() and max() functions can be used to find the lowest or highest value in a list of arguments:
+                </p>
+                <div class="example-div">
+                    <h4>Example</h4>
+<pre>
+&lt?php
+echo(min(0, 150, 30, 20, -8, -200));  // returns -200
+echo(max(0, 150, 30, 20, -8, -200));  // returns 150
+?>
+</pre>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_math_min_max"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h4>PHP abs() Function</h4>
+                <p>The abs() function returns the absolute (positive) value of a number:</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+<pre>
+&lt?php
+echo(abs(-6.7));  // returns 6.7
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_math_abs"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h4>PHP sqrt() Function</h4>
+                <p>The sqrt() function returns the square root of a number:</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+<pre>
+&lt?php
+echo(sqrt(64));  // returns 8
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_math_sqrt"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+
+            <div class="main-ind-topic">
+                <h4>PHP round() Function</h4>
+                <p>The round() function rounds a floating-point number to its nearest integer:</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+<pre>
+&lt?php
+echo(round(0.60));  // returns 1
+echo(round(0.49));  // returns 0
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_math_round" target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="main-section">
             <header id="Php_Constants"></header>
             <div class="main-ind-topic">
                 <h3></h3>
