@@ -46,7 +46,7 @@ body a {
     display: flex;
 }
 
-.body-header p:hover:not(.php-p), .body-header i:hover, .body-header p:focus:not(.php-p), .body-header i:focus{
+.body-header p:hover:not(.php-p), .body-header i:hover, .body-header p:focus:not(.php-p), .body-header i:focus {
     background-color: #ffffff20;
 }
 
@@ -75,7 +75,6 @@ body a {
     flex-direction: column;
     padding: 1rem 1rem 1rem 0;
     margin: 1rem;
-    /* box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5); */
 }
 
 .nav-link {
@@ -101,8 +100,8 @@ body a {
     border-bottom-color: transparent;
 }
 
-.nav-link:hover,.nav-link:focus {
-    background-color:#00000015;
+.nav-link:hover, .nav-link:focus {
+    background-color: #00000015;
 }
 
 /* ----- main-document start ------  */
@@ -111,7 +110,7 @@ body a {
     display: flex;
     flex-direction: column;
     margin: 100px 10px 40px 350px;
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
     width: 60%;
     box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.5);
 }
@@ -125,37 +124,30 @@ body a {
     font-size: 2.5rem;
     font-weight: 5px;
     margin-bottom: 2rem;
+    border-bottom: 1px solid;
+    padding-bottom: 1rem;
 }
-.main-ind-topic{
+
+.main-ind-topic {
     margin-bottom: 2.5rem;
 }
+
 .main-ind-topic>p {
     margin-bottom: 1rem;
 }
 
 .main-ind-topic>h3 {
     font-size: 1.5rem;
-    margin:2rem 0 1.5rem;
-    border-bottom: 1px solid;
+    margin: 2rem 0 1.5rem;
     padding-bottom: 1rem;
+    /* text-decoration: underline #00000050; */
 }
 
-.main-ind-topic>pre{
-    white-space: pre-wrap;
+.main-ind-topic ul {
+    margin:1rem 3rem;
 }
-.main-ind-topic>h4{
-    font-size: 1.5rem;
-    margin:3rem 0 1rem;
-    font-weight: 1px;
-    padding-bottom: .5rem;
-    text-decoration: underline #00000050;
-}
-.syntax-div {
-    margin: 2rem 1.5rem;
-    padding: 1.5rem;
-    background-color: #ffd93030;
-    border-left: 5px solid #ff307c;
-    white-space: pre-wrap;
+.main-ind-topic li{
+    padding:.5rem 0;
 }
 
 .example-div {
@@ -175,14 +167,13 @@ body a {
     white-space: pre-wrap;
 }
 
-
 .btn {
     padding: 0.5rem 1rem;
     margin: 0 2rem;
     background-color: #ff307c;
     border: unset;
     border-radius: .5rem;
-    transition:transform .5s;
+    transition: transform .5s;
     cursor: pointer;
 }
 
@@ -192,81 +183,86 @@ body a {
     font-weight: bold;
 }
 
-.btn:hover,.btn:focus{
-    transform:translate(10px);
+.btn:hover, .btn:focus {
+    transform: translate(10px);
 }
 
 /* ----- main-document end ------  */
+
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
 
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #e2dfdf;
-  }
+}
 
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #f13d7f98;
-  }
+}
 
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #ff307c;
-  }
+}
 
-  @media (max-width:940px){
-     #navbar{
-        margin:80px 1rem 1rem;
-        height:295px;
+@media (max-width:940px) {
+    #navbar {
+        margin: 80px 1rem 1rem;
+        height: 295px;
         width: 90%;
-        min-width:320px;
-        position:unset;
+        min-width: 320px;
+        position: unset;
         overflow-y: scroll;
-     }  
-
-     #main-doc{
-        margin:3rem auto;
-        width: 90%;
-     }
-
-     .body-header-div1 p:nth-child(4n){
-            display: none;
-     }
-  }
-
-  @media (max-width:800px){
-      .body-header-div1 p:nth-child(2n){
-            display: none;
-      }
     }
-
- @media (max-width:530px) {
-     .body-header-div2 i{
-         display: none;
-     }
-     .syntax-div,.example-div pre{
-         margin-left:0.5rem;
-     }
- }
-
- @media (max-width:360px) {
-    .body-header-div2{
+    #main-doc {
+        margin: 3rem auto;
+        width: 90%;
+    }
+    .body-header-div1 p:nth-child(4n) {
         display: none;
     }
-    #navbar{
-        min-width:unset;
+}
+
+@media (max-width:800px) {
+    .body-header-div1 p:nth-child(2n) {
+        display: none;
     }
-    
-    .nav-link{
+}
+
+@media (max-width:530px) {
+    .body-header-div2 i {
+        display: none;
+    }
+    .example-div pre {
+        margin: 2rem .5rem;
+        font-size: 15px;
+        overflow-x:auto;
+    }
+    .btn {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width:360px) {
+    .body-header-div2 {
+        display: none;
+    }
+    #navbar {
+        min-width: unset;
+    }
+    .nav-link {
         white-space: pre-wrap;
     }
-    .syntax-div,.example-div pre{
-        margin-left:0rem;
+    .example-div pre {
+        margin: 2rem 0rem;
+    }
+    .btn {
+        margin: 0;
     }
 }
 
 @media (max-width:320px) {
-    .body-header-div1 p:not(.php-p){
+    .body-header-div1 p:not(.php-p) {
         display: none;
     }
 }
-  

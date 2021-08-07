@@ -33,7 +33,7 @@
             <i class="fas fa-search"></i>
         </div>
     </header>
-    <div id="navbar">
+    <nav id="navbar">
         <header class="nav-des">
             <p>
             <P>PHP BASICS</P>
@@ -43,15 +43,14 @@
             <a href="#Php_Syntax" class="nav-link">PHP Syntax</a>
             <a href="#Php_Comments" class="nav-link">PHP Comments</a>
             <a href="#Php_Variables" class="nav-link">PHP Variables </a>
-            <a href="#Php_echo_and_print" class="nav-link">PHP echo and print Statements</a>
-            <a href="#Php Data Types" class="nav-link">PHP Data Types</a>
+            <a href="#Php_echo_and_print_Statements" class="nav-link">PHP echo and print Statements</a>
+            <a href="#Php_Data_Types" class="nav-link">PHP Data Types</a>
             <a href="#Php_Strings" class="nav-link">PHP Strings</a>
             <a href="#Php_Numbers" class="nav-link">PHP Numbers</a>
             <a href="#Php_Math" class="nav-link">PHP Math</a>
             <a href="#Php_Constants" class="nav-link">PHP Constants</a>
-            <a href="#Php_Operators" class="nav-link">PHP Operators</a>
-            <a href="#Php_if_else_elseif" class="nav-link">PHP if...else...elseif Statements</a>
-            <a href="#Php_switch" class="nav-link">PHP switch Statement</a>
+            <a href="#Php_if_else_Statements" class="nav-link">PHP if else Statements</a>
+            <a href="#Php_switch_Statement" class="nav-link">PHP switch Statement</a>
             <a href="#Php_Loops" class="nav-link">PHP Loops</a>
             <a href="#Php_Functions" class="nav-link">PHP Functions</a>
             <a href="#Php_Arrays" class="nav-link">PHP Arrays</a>
@@ -62,13 +61,13 @@
             <a href="#Php_Form_Required" class="nav-link">PHP Form Required</a>
             <a href="#Php_Form_URL/E-mail" class="nav-link">PHP Form URL/E-mail</a>
             <a href="#Php_Form_Complete" class="nav-link">PHP Form Complete</a>
-            <a href="#Php_Form_Validation" class="nav-link">PHP Form Validation</a>
         </div>
-    </div>
+    </nav>
 
     <main id="main-doc">
-        <section class="main-section">
-            <header id="Php_Syntax">PHP Syntax</header>
+
+        <section class="main-section" id="Php_Syntax">
+            <header>PHP Syntax</header>
             <div class="main-ind-topic">
                 <h3>Basic PHP Syntax</h3>
                 <p>A PHP script can be placed anywhere in the document.</p>
@@ -76,13 +75,15 @@
                     &lt?php and ends with ?>:
                 </p>
 
-                <pre class="syntax-div">
+                <div class="example-div">
+<pre>
 &lt?php
 // PHP code goes here
 ?>
 </pre>
+                </div>
 
-                <p>The default file extension for PHP files is ".php".</p>
+                <p>The default file extension for PHP files is .php".</p>
                 <p>A PHP file normally contains HTML tags, and some PHP scripting code.</p>
                 <p>Below, we have an example of a simple PHP file, with a PHP script that uses a built-in PHP
                     function "echo" to output the text "Hello World!" on a web page:</p>
@@ -135,8 +136,8 @@ echo "Hello World!";
             </div>
         </section>
 
-        <section class="main-section">
-            <header id="Php_Comments">PHP Comments</header>
+        <section class="main-section" id="Php_Comments">
+            <header>PHP Comments</header>
             <div class="main-ind-topic">
                 <h3>Comments in PHP</h3>
                 <p>A comment in PHP code is a line that is not executed as a part of the program. Its only purpose is to
@@ -209,8 +210,8 @@ echo $x;
             </div>
         </section>
 
-        <section class="main-section">
-            <header id="Php_Variables">PHP Variables</header>
+        <section class="main-section" id="Php_Variables">
+            <header>PHP Variables</header>
             <div class="main-ind-topic">
                 <h3>Creating (Declaring) PHP Variables</h3>
                 <p>In PHP, a variable starts with the $ sign, followed by the name of the variable:</p>
@@ -245,8 +246,8 @@ echo "I love $txt!";
             </div>
         </section>
 
-        <section class="main-section">
-            <header id="Php_echo_and_print">PHP echo and print Statements</header>
+        <section class="main-section" id="Php_echo_and_print_Statements">
+            <header>PHP echo and print Statements</header>
             <div class="main-ind-topic">
                 <h3>PHP echo and print Statements</h3>
                 <p>echo and print are more or less the same. They are both used to output data to the screen.</p>
@@ -289,22 +290,22 @@ print "I'm about to learn PHP!";
             </div>
         </section>
 
-        <section class="main-section">
-            <header id="Php Data Types">PHP Data Types</header>
+        <section class="main-section" id="Php_Data_Types">
+            <header>PHP Data Types</header>
             <div class="main-ind-topic">
                 <h3>PHP Data Types</h3>
                 <p>Variables can store data of different types, and different data types can do different things.</p>
-                <pre>PHP supports the following data types:
-
-    String
-    Integer
-    Float 
-    Boolean
-    Array
-    Object
-    NULL
-    Resource
-                </pre>
+                <p>PHP supports the following data types:</p>
+                <ul>
+                    <li>String</li>
+                    <li>Integer</li>
+                    <li>Float</li>
+                    <li>Boolean</li>
+                    <li>Array</li>
+                    <li>Object</li>
+                    <li>NULL</li>
+                    <li>Resource</li>
+                </ul>
             </div>
             <div class="main-ind-topic">
                 <h3>PHP String</h3>
@@ -447,19 +448,19 @@ var_dump($x);
             </div>
         </section>
 
-        <section class="main-section">
-            <header id="Php_Strings">PHP Strings</header>
+        <section class="main-section" id="Php_Strings">
+            <header>PHP Strings</header>
             <div class="main-ind-topic">
                 <h3>PHP String Functions</h3>
                 <p>In this chapter we will look at some commonly used functions to manipulate strings.</p>
             </div>
             <div class="main-ind-topic">
-                <h4>strlen() - Return the Length of a String</h4>
+                <h3>strlen() - Return the Length of a String</h3>
                 <p>The PHP strlen() function returns the length of a string.</p>
                 <div class="example-div">
                     <h4>Example</h4>
                     <P>Return the length of the string "Hello world!":</P>
-<pre>
+                    <pre>
 &lt?php
 echo strlen("Hello world!"); // outputs 12
 ?>
@@ -470,12 +471,12 @@ echo strlen("Hello world!"); // outputs 12
                 </div>
             </div>
             <div class="main-ind-topic">
-                <h4>str_word_count() - Count Words in a String</h4>
+                <h3>str_word_count() - Count Words in a String</h3>
                 <p>The PHP str_word_count() function counts the number of words in a string.</p>
                 <div class="example-div">
                     <h4>Example</h4>
                     <P>The PHP str_word_count() function counts the number of words in a string.</P>
-<pre>
+                    <pre>
 &lt?php
 echo str_word_count("Hello world!"); // outputs 2
 ?>
@@ -486,13 +487,13 @@ echo str_word_count("Hello world!"); // outputs 2
                 </div>
             </div>
             <div class="main-ind-topic">
-                <h4>strrev() - Reverse a String</h4>
+                <h3>strrev() - Reverse a String</h3>
                 <p>The PHP strrev() function reverses a string.</p>
                 <div class="example-div">
                     <h4>Example</h4>
                     <P>Reverse the string "Hello world!":</P>
-<pre>
-    &lt?php
+                    <pre>
+&lt?php
 echo strrev("Hello world!"); // outputs !dlrow olleH
 ?>
 </pre>
@@ -502,14 +503,14 @@ echo strrev("Hello world!"); // outputs !dlrow olleH
                 </div>
             </div>
             <div class="main-ind-topic">
-                <h4>strpos() - Search For a Text Within a String</h4>
+                <h3>strpos() - Search For a Text Within a String</h3>
                 <p>The PHP strpos() function searches for a specific text within a string. If a match is found, the
                     function returns the character position of the first match. If no match is found, it will return
                     FALSE.</p>
                 <div class="example-div">
                     <h4>Example</h4>
                     <p>Search for the text "world" in the string "Hello world!":</p>
-<pre>
+                    <pre>
 &lt?php
 echo strpos("Hello world!", "world"); // outputs 6
 ?>
@@ -519,12 +520,12 @@ echo strpos("Hello world!", "world"); // outputs 6
                 </div>
             </div>
             <div class="main-ind-topic">
-                <h4>str_replace() - Replace Text Within a String</h4>
+                <h3>str_replace() - Replace Text Within a String</h3>
                 <p>The PHP str_replace() function replaces some characters with some other characters in a string.</p>
                 <div class="example-div">
                     <h4>Example</h4>
                     <p>Replace the text "world" with "Dolly":</p>
-<pre>
+                    <pre>
 &lt?php
 echo str_replace("world", "Dolly", "Hello world!"); // outputs Hello Dolly!
 ?>
@@ -536,8 +537,8 @@ echo str_replace("world", "Dolly", "Hello world!"); // outputs Hello Dolly!
             </div>
         </section>
 
-        <section class="main-section">
-            <header id="Php_Numbers">PHP Numbers</header>
+        <section class="main-section" id="Php_Numbers">
+            <header>PHP Numbers</header>
             <div class="main-ind-topic">
                 <h3>PHP Numbers</h3>
                 <p>One thing to notice about PHP is that it provides automatic data type conversion.</p>
@@ -547,15 +548,18 @@ echo str_replace("world", "Dolly", "Hello world!"); // outputs Hello Dolly!
             </div>
 
             <div class="main-ind-topic">
-                <h4>PHP Integers</h4>
+                <h3>PHP Integers</h3>
                 <p>An integer is a number without any decimal part</p>
-                <P>An integer data type is a non-decimal number between -2147483648 and 2147483647 in 32 bit systems,
-                    and between -9223372036854775808 and 9223372036854775807 in 64 bit systems. A value greater (or
-                    lower) than this, will be stored as float, because it exceeds the limit of an integer.</P>
+                <p>An integer data type is a non-decimal number between <code>-2147483648 </code> and
+                    <code>2147483647 </code>in 32 bit systems,
+                    and between <code>-9223372036854775808 </code>and <code>9223372036854775807 </code>in
+                    <code>64 </code> bit systems. A value greater (or
+                    lower) than this, will be stored as float, because it exceeds the limit of an integer.
+                </p>
                 <div class="example-div">
                     <h4>Example</h4>
                     <p>Check if the type of a variable is integer:</p>
-<pre>
+                    <pre>
 &lt?php
 $x = 5985;
 var_dump(is_int($x));
@@ -570,14 +574,15 @@ var_dump(is_int($x));
                 </div>
             </div>
             <div class="main-ind-topic">
-                <h4>PHP Floats</h4>
+                <h3>PHP Floats</h3>
                 <p>A float is a number with a decimal point or a number in exponential form.</p>
-                <p>e float data type can commonly store a value up to 1.7976931348623E+308 (platform dependent), and
+                <p>e float data type can commonly store a value up to <code>1.7976931348623E+308</code> (platform
+                    dependent), and
                     have a maximum precision of 14 digits.</p>
                 <div class="example-div">
                     <h4>Example</h4>
                     <p>Check if the type of a variable is float:</p>
-<pre>
+                    <pre>
 &lt?php
 $x = 10.365;
 var_dump(is_float($x));
@@ -589,12 +594,12 @@ var_dump(is_float($x));
                 </div>
             </div>
             <div class="main-ind-topic">
-                <h4>PHP Infinity</h4>
+                <h3>PHP Infinity</h3>
                 <p>A numeric value that is larger than PHP_FLOAT_MAX is considered infinite.</p>
                 <div class="example-div">
                     <h4>Example</h4>
                     <p>Check if a numeric value is finite or infinite:</p>
-<pre>
+                    <pre>
 &lt?php
 $x = 1.9e411;
 var_dump($x);
@@ -606,13 +611,13 @@ var_dump($x);
                 </div>
             </div>
             <div class="main-ind-topic">
-                <h4>PHP NaN</h4>
+                <h3>PHP NaN</h3>
                 <p>NaN stands for Not a Number.</p>
                 <p>NaN is used for impossible mathematical operations.</p>
                 <div class="example-div">
                     <h4>Example</h4>
                     <p>Invalid calculation will return a NaN value:</p>
-<pre>
+                    <pre>
 &lt?php
 $x = acos(8);
 var_dump($x);
@@ -624,14 +629,14 @@ var_dump($x);
             </div>
         </section>
 
-        <section class="main-section">
-            <header id="Php_Math">PHP Math</header>
+        <section class="main-section" id="Php_Math">
+            <header>PHP Math</header>
             <div class="main-ind-topic">
-                <h4>PHP pi() Function</h4>
+                <h3>PHP pi() Function</h3>
                 <p>The pi() function returns the value of PI:</p>
                 <div class="example-div">
                     <h4>Example</h4>
-<pre>
+                    <pre>
 &lt?php
 echo(pi()); // returns 3.1415926535898
 ?>
@@ -641,12 +646,12 @@ echo(pi()); // returns 3.1415926535898
                 </div>
             </div>
             <div class="main-ind-topic">
-                <h4>PHP min() and max() Functions</h4>
+                <h3>PHP min() and max() Functions</h3>
                 <p>The min() and max() functions can be used to find the lowest or highest value in a list of arguments:
                 </p>
                 <div class="example-div">
                     <h4>Example</h4>
-<pre>
+                    <pre>
 &lt?php
 echo(min(0, 150, 30, 20, -8, -200));  // returns -200
 echo(max(0, 150, 30, 20, -8, -200));  // returns 150
@@ -658,11 +663,11 @@ echo(max(0, 150, 30, 20, -8, -200));  // returns 150
                 </div>
             </div>
             <div class="main-ind-topic">
-                <h4>PHP abs() Function</h4>
+                <h3>PHP abs() Function</h3>
                 <p>The abs() function returns the absolute (positive) value of a number:</p>
                 <div class="example-div">
                     <h4>Example</h4>
-<pre>
+                    <pre>
 &lt?php
 echo(abs(-6.7));  // returns 6.7
 ?>
@@ -672,11 +677,11 @@ echo(abs(-6.7));  // returns 6.7
                 </div>
             </div>
             <div class="main-ind-topic">
-                <h4>PHP sqrt() Function</h4>
+                <h3>PHP sqrt() Function</h3>
                 <p>The sqrt() function returns the square root of a number:</p>
                 <div class="example-div">
                     <h4>Example</h4>
-<pre>
+                    <pre>
 &lt?php
 echo(sqrt(64));  // returns 8
 ?>
@@ -687,262 +692,806 @@ echo(sqrt(64));  // returns 8
             </div>
 
             <div class="main-ind-topic">
-                <h4>PHP round() Function</h4>
+                <h3>PHP round() Function</h3>
                 <p>The round() function rounds a floating-point number to its nearest integer:</p>
                 <div class="example-div">
                     <h4>Example</h4>
-<pre>
+                    <pre>
 &lt?php
 echo(round(0.60));  // returns 1
 echo(round(0.49));  // returns 0
 ?>
 </pre>
-                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_math_round" target="_blank">Try it yourself</a></button>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_math_round"
+                            target="_blank">Try it yourself</a></button>
                 </div>
             </div>
         </section>
 
-        <!-- <section class="main-section">
-            <header id="Php_Constants"></header>
+        <section class="main-section" id="Php_Constants">
+            <header>PHP Constants</header>
             <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
+                <h3>PHP Constants</h3>
+                <p>A constant is an identifier (name) for a simple value. The value cannot be changed during the script.
+                </p>
+                <p>A valid constant name starts with a letter or underscore (no $ sign before the constant name).</p>
+            </div>
+            <div class="main-ind-topic">
+                <h3>Create a PHP Constant</h3>
+                <p>To create a constant, use the define() function.</p>
+                <div class="example-div">
+                    <h4>Syntax</h4>
+                    <pre>
+&lt?php
+define("GREETING", "Welcome to W3Schools.com!");
+echo GREETING;
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_constant1"
+                            target="_blank">Try it yourself</a></button>
                 </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>PHP Constant Arrays</h3>
+                <p>In PHP7, you can create an Array constant using the define() function.</p>
                 <div class="example-div">
                     <h4>Example</h4>
-                    <pre></pre>
+                    <p>Create an Array constant:</p>
+                    <pre>
+&lt?php
+define("cars", [
+    "Alfa Romeo",
+    "BMW",
+    "Toyota"
+]);
+echo cars[0];
+?>
+</pre>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_constant_array"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>Constants are Global</h3>
+                <p>Constants are automatically global and can be used across the entire script.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <pre>
+&lt?php
+define("GREETING", "Welcome to W3Schools.com!");
+
+function myTest() {
+    echo GREETING;
+}
+    
+myTest();
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_constant3"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="main-section" id="Php_if_else_Statements">
+            <header>PHP if else Statements</header>
+            <div class="main-ind-topic">
+                <h3>PHP Conditional Statements</h3>
+                <p>Very often when you write code, you want to perform different actions for different conditions. You
+                    can use conditional statements in your code to do this.</p>
+            </div>
+            <div class="main-ind-topic">
+                <h3>PHP - The if Statement</h3>
+                <p>The if statement executes some code if one condition is true.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <p>Output "Have a good day!" if the current time (HOUR) is less than 20:</p>
+                    <pre>
+&lt?php
+$t = date("H");
+
+if ($t &lt "20") {
+    echo "Have a good day!";
+}
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_if"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>PHP - The if...else Statement</h3>
+                <p>The if...else statement executes some code if a condition is true and another code if that condition
+                    is false.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+<pre>
+&ltphp
+$t = date("H");
+
+if ($t  &lt "20") {
+echo "Have a good day!";
+} else {
+echo "Have a good night!";
+}
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_if_else"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>PHP - The if...elseif...else Statement</h3>
+                <p>The if...elseif...else statement executes different codes for more than two conditions.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <p>Output "Have a good morning!" if the current time is less than 10, and "Have a good day!" if the
+                        current time is less than 20. Otherwise it will output "Have a good night!":</p>
+                    <pre>
+&lt?php
+$t = date("H");
+
+if ($t &lt "10") {
+echo "Have a good morning!";
+} elseif ($t &lt "20") {
+echo "Have a good day!";
+} else {
+echo "Have a good night!";
+}
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_if_elseif"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="main-section" id="Php_switch_Statement">
+            <header >PHP switch Statement</header>
+            <div class="main-ind-topic">
+                <h3>The PHP switch Statement</h3>
+                <p>Use the switch statement to select one of many blocks of code to be executed.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <pre>
+&lt?php
+$favcolor = "red";
+
+switch ($favcolor) {
+    case "red":
+    echo "Your favorite color is red!";
+    break;
+    case "blue":
+    echo "Your favorite color is blue!";
+    break;
+    case "green":
+    echo "Your favorite color is green!";
+    break;
+    default:
+    echo "Your favorite color is neither red, blue, nor green!";
+}
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_switch"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section" id="Php_Loops">
+            <header >PHP Loops</header>
+            <div class="main-ind-topic">
+                <h3>PHP Loops</h3>
+                <p>Often when you write code, you want the same block of code to run over and over again a certain
+                    number of times. So, instead of adding several almost equal code-lines in a script, we can use
+                    loops.</p>
+                <p>Loops are used to execute the same block of code again and again, as long as a certain condition is
+                    true.</p>
+            </div>
+            <div class="main-ind-topic">
+                <h3>The PHP while Loop</h3>
+                <p>The while loop executes a block of code as long as the specified condition is true.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <p>The example below displays the numbers from 1 to 5:</p>
+                    <pre>
+&lt?php
+$x = 1;
+
+while($x &lt= 5) {
+    echo "The number is: $x &ltbr>";
+    $x++;
+}
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_loop_while"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>The PHP do...while Loop</h3>
+                <p>The do...while loop will always execute the block of code once, it will then check the condition, and
+                    repeat the loop while the specified condition is true.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <p>The example below first sets a variable $x to 1 ($x = 1). Then, the do while loop will write some
+                        output, and then increment the variable $x with 1. Then the condition is checked (is $x less
+                        than, or equal to 5?), and the loop will continue to run as long as $x is less than, or equal to
+                        5:</p>
+                    <pre>
+&lt?php
+$x = 1;
+
+do {
+    echo "The number is: $x &ltbr>";
+    $x++;
+} while ($x &lt= 5);
+?>
+</pre>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_loop_do_while"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>The PHP for Loop</h3>
+                <p>The for loop is used when you know in advance how many times the script should run.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <p>The example below displays the numbers from 0 to 10:</p>
+                    <pre>
+&lt?php
+for ($x = 0; $x &lt= 10; $x++) {
+echo "The number is: $x &ltbr>";
+}
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_loop_for"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>The PHP foreach Loop</h3>
+                <p>The foreach loop works only on arrays, and is used to loop through each key/value pair in an array.
+                </p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <p>The following example will output the values of the given array ($colors):</p>
+                    <pre>
+&lt?php
+$colors = array("red", "green", "blue", "yellow");
+
+foreach ($colors as $value) {
+    echo "$value &ltbr>";
+}
+?>
+</pre>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_loop_foreach"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>PHP Break</h3>
+                <p>You have already seen the break statement used in an earlier chapter of this tutorial. It was used to
+                    "jump out" of a switch statement.</p>
+                <p>The break statement can also be used to jump out of a loop.</p>
+                <div class="example-div">
+                    <p>This example jumps out of the loop when x is equal to 4:</p>
+                    <h4>Example</h4>
+                    <pre>
+&lt?php
+for ($x = 0; $x &lt 10; $x++) {
+if ($x == 4) {
+break;
+}
+echo "The number is: $x &ltbr>";
+}
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_break"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>PHP Continue</h3>
+                <p>The continue statement breaks one iteration (in the loop), if a specified condition occurs, and
+                    continues with the next iteration in the loop.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <p>This example skips the value of 4:</p>
+                    <pre>
+&lt?php
+for ($x = 0; $x &lt 10; $x++) {
+if ($x == 4) {
+continue;
+}
+echo "The number is: $x &ltbr>";
+}
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_continue"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="main-section" id="Php_Functions">
+            <header >PHP Functions</header>
+            <div class="main-ind-topic">
+                <h3>PHP Built-in Functions</h3>
+                <p>PHP has over 1000 built-in functions that can be called directly, from within a script, to perform a
+                    specific task.</p>
+                <p>Please check out our PHP reference for a complete overview of the PHP built-in functions.</p>
+            </div>
+            <div class="main-ind-topic">
+                <h3>PHP User Defined Functions</h3>
+                <p>Besides the built-in PHP functions, it is possible to create your own functions.</p>
+                <ul>
+                    <li>A function is a block of statements that can be used repeatedly in a program.</li>
+                    <li>A function will not execute automatically when a page loads.</li>
+                    <li>A function will be executed by a call to the function.</li>
+                </ul>
+            </div>
+            <div class="main-ind-topic">
+                <h3>Create a User Defined Function in PHP</h3>
+                <p>A user-defined function declaration starts with the word function:</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <p>In the example below, we create a function named "writeMsg()". The opening curly brace ( { )
+                        indicates the beginning of the function code, and the closing curly brace ( } ) indicates the
+                        end of the function. The function outputs "Hello world!". To call the function, just write its
+                        name followed by brackets ():</p>
+                    <pre>
+&lt?php
+function writeMsg() {
+echo "Hello world!";
+}
+
+writeMsg(); // call the function
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_function1"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section" id="Php_Arrays">
+            <header >PHP Arrays</header>
+            <div class="main-ind-topic">
+                <h3>What is an Array?</h3>
+                <p>An array is a special variable, which can hold more than one value at a time.</p>
+                <p>An array can hold many values under a single name, and you can access the values by referring to an
+                    index number.</p>
+            </div>
+            <div class="main-ind-topic">
+                <h3>Create an Array in PHP</h3>
+                <p>In PHP, the array() function is used to create an array.</p>
+                <p>In PHP, there are three types of arrays:</p>
+                <ul>
+                    <li>Indexed arrays - Arrays with a numeric index</li>
+                    <li>Associative arrays - Arrays with named keys</li>
+                    <li>Multidimensional arrays - Arrays containing one or more arrays</li>
+                </ul>
+            </div>
+            <div class="main-ind-topic">
+                <h3>Get The Length of an Array - The count() Function</h3>
+                <p>The count() function is used to return the length (the number of elements) of an array:</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <pre>
+&lt?php
+$cars = array("Volvo", "BMW", "Toyota");
+echo count($cars);
+?>
+</pre>
+                    <button class="btn"><a
+                            href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_array_length"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section" id="Php_Superglobals">
+            <header >PHP Superglobals</header>
+            <div class="main-ind-topic">
+                <h3>PHP Global Variables - Superglobals</h3>
+                <p>Some predefined variables in PHP are "superglobals", which means that they are always accessible,
+                    regardless of scope - and you can access them from any function, class or file without having to do
+                    anything special.</p>
+                <p>The PHP superglobal variables are:</p>
+                <ul>
+                    <li>$GLOBALS</li>
+                    <li>$_SERVER</li>
+                    <li>$_REQUEST</li>
+                    <li>$_POST</li>
+                    <li>$_GET</li>
+                    <li>$_FILES</li>
+                    <li>$_ENV</li>
+                    <li>$_COOKIE</li>
+                    <li>$_SESSION</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main-section" id="Php_RegEx">
+            <header >PHP RegEx</header>
+            <div class="main-ind-topic">
+                <h3>What is a Regular Expression?</h3>
+                <p>A regular expression is a sequence of characters that forms a search pattern. When you search for
+                    data in a text, you can use this search pattern to describe what you are searching for.</p>
+                <p>A regular expression can be a single character, or a more complicated pattern</p>
+                <p>Regular expressions can be used to perform all types of text search and text replace operations.</p>
+            </div>
+            <div class="main-ind-topic">
+                <h3>Using preg_match()</h3>
+                <p>The preg_match() function will tell you whether a string contains matches of a pattern.</p>
+                <div class="example-div">
+                    <h4>Example</h4>
+                    <p>Use a regular expression to do a case-insensitive search for "w3schools" in a string:</p>
+                    <pre>
+&lt?php
+$str = "Visit W3Schools";
+$pattern = "/w3schools/i";
+echo preg_match($pattern, $str); // Outputs 1
+?>
+</pre>
+                    <button class="btn"><a href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_regex_match"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>Using preg_match_all()</h3>
+                <p>The preg_match_all() function will tell you how many matches were found for a pattern in a string.
+                </p>
+                <div class="example-div">
+                    <p>Use a regular expression to do a case-insensitive count of the number of occurrences of "ain" in
+                        a string:</p>
+                    <h4>Example</h4>
+                    <pre>
+&lt?php
+$str = "The rain in SPAIN falls mainly on the plains.";
+$pattern = "/ain/i";
+echo preg_match_all($pattern, $str); // Outputs 4
+?>
+</pre>
                     <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
                 </div>
             </div>
         </section>
 
-        <section class="main-section">
-            <header id="Php_Operators"></header>
+        <section class="main-section" id="Php_Form_Handling">
+            <header >PHP Form Handling</header>
             <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
+                <h3>PHP - A Simple HTML Form</h3>
+                <p>The example below displays a simple HTML form with two input fields and a submit button:</p>
                 <div class="example-div">
                     <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
+<pre>
+&lthtml>
+&ltbody>
+
+&ltform action="welcome.php" method="post">
+Name: &ltinput type="text" name="name">&ltbr>
+E-mail: &ltinput type="text" name="email">&ltbr>
+&ltinput type="submit">
+&lt/form>
+
+&lt/body>
+&lt/html>
+</pre>
+                    <button class="btn"><a href="https://tryphp.w3schools.com/showphp.php?filename=demo_form_post"
+                            target="_blank">Try it yourself</a></button>
+                </div>
+            </div>
+            <div class="example-div">
+                <h4>Example</h4>
+                <p>The same result could also be achieved using the HTTP GET method:</p>
+<pre>
+&lthtml>
+&ltbody>
+
+&ltform action="welcome_get.php" method="get">
+Name: &ltinput type="text" name="name">&ltbr>
+E-mail: &ltinput type="text" name="email">&ltbr>
+&ltinput type="submit">
+&lt/form>
+
+&lt/body>
+&lt/html>
+</pre>
+                <button class="btn"><a href="https://tryphp.w3schools.com/showphp.php?filename=demo_form_get"
+                        target="_blank">Try it yourself</a></button>
+            </div>
+        </section>
+
+        <section class="main-section" id="Php_Form_Validation">
+            <header >PHP Form Validation</header>
+            <div class="main-ind-topic">
+                <h3>PHP Form Validation</h3>
+                <p>The HTML form we will be working at in these chapters, contains various input fields: required and
+                    optional text fields, radio buttons, and a submit button:</p>
+            </div>
+            <div class="main-ind-topic">
+                <h3>Text Fields</h3>
+                <p>The name, email, and website fields are text input elements, and the comment field is a textarea. The
+                    HTML code looks like this:</p>
+                <div class="example-div">
+                    <h4>syntax</h4>
+<pre>
+type="text" name="name">
+type="text" name="email">
+type="text" name="website">
+area name="comment" rows="5" cols="40">&lt/textarea>
+</pre>
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>Radio Buttons</h3>
+                <p>The gender fields are radio buttons and the HTML code looks like this:</p>
+               <div class="example-div">
+                <h4>syntax</h4>
+<pre>
+radio" name="gender" value="female">Female
+radio" name="gender" value="male">Male
+radio" name="gender" value="other">Other
+</pre>
+               </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>The Form Element</h3>
+                <p>The HTML code of the form looks like this:</p>
+              <div class="example-div">
+                <h4>syntax</h4>
+<pre class="syntax">
+="post" action="&lt?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+</pre>
+              </div>
+            </div>
+        </section>
+
+        <section class="main-section" id="Php_Form_Required">
+            <header>PHP Form Required</header>
+            <div class="main-ind-topic">
+                <h3>PHP - Required Fields</h3>
+                <div class="example-div">
+                    <h4>syntax</h4>
+                    <pre>
+&lt?php
+// define variables and set to empty values
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+} else {
+    $name = test_input($_POST["name"]);
+}
+
+if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+} else {
+    $email = test_input($_POST["email"]);
+}
+
+if (empty($_POST["website"])) {
+    $website = "";
+} else {
+    $website = test_input($_POST["website"]);
+}
+
+if (empty($_POST["comment"])) {
+    $comment = "";
+} else {
+    $comment = test_input($_POST["comment"]);
+}
+
+if (empty($_POST["gender"])) {
+    $genderErr = "Gender is required";
+} else {
+    $gender = test_input($_POST["gender"]);
+}
+}
+?>
+</pre>
+                </div>
+                <div class="main-ind-topic">
+                    <h3>PHP - Display The Error Messages</h3>
+                    <p>Then in the HTML form, we add a little script after each required field, which generates the
+                        correct error message if needed (that is if the user tries to submit the form without filling
+                        out the required fields):</p>
+                    <div class="example-div">
+                        <h4>Example</h4>
+                        <pre>
+&ltform method="post" action="&lt?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+
+Name: &ltinput type="text" name="name">
+&ltspan class="error">* &lt?php echo $nameErr;?>&lt/span>
+&ltbr>&ltbr>
+E-mail:
+&ltinput type="text" name="email">
+&ltspan class="error">* &lt?php echo $emailErr;?>&lt/span>
+&ltbr>&ltbr>
+Website:
+&ltinput type="text" name="website">
+&ltspan class="error">&lt?php echo $websiteErr;?>&lt/span>
+&ltbr>&ltbr>
+Comment: &lttextarea name="comment" rows="5" cols="40">&lt/textarea>
+&ltbr>&ltbr>
+Gender:
+&ltinput type="radio" name="gender" value="female">Female
+&ltinput type="radio" name="gender" value="male">Male
+&ltinput type="radio" name="gender" value="other">Other
+&ltspan class="error">* &lt?php echo $genderErr;?>&lt/span>
+&ltbr>&ltbr>
+&ltinput type="submit" name="submit" value="Submit">
+
+&lt/form>
+</pre>
+                        <button class="btn"><a
+                                href="https://tryphp.w3schools.com/showphp.php?filename=demo_form_validation_required"
+                                target="_blank">Try it yourself</a></button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="main-section">
-            <header id="Php_if_else_elseif"></header>
+        <section class="main-section" id="Php_Form_URL/E-mail">
+            <header>PHP Form URL/E-mail</header>
             <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
+                <h3>PHP - Validate Name</h3>
+                <p>The code below shows a simple way to check if the name field only contains letters, dashes,
+                    apostrophes and whitespaces. If the value of the name field is not valid, then store an error
+                    message:</p>
+                <div class="example-div">
+                    <h4>syntax</h4>
+<pre>
+$name = test_input($_POST["name"]);
+if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+$nameErr = "Only letters and white space allowed";
+}
+</pre>
                 </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>PHP - Validate E-mail</h3>
+                <p>The easiest and safest way to check whether an email address is well-formed is to use PHP's
+                    filter_var() function.</p>
+                <p>In the code below, if the e-mail address is not well-formed, then store an error message:</p>
+                <div class="example-div">
+                    <h4>syntax</h4>
+<pre>
+put($_POST["email"]);
+$email, FILTER_VALIDATE_EMAIL)) {
+alid email format";
+</pre>             
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>PHP - Validate URL</h3>
+                <p>The code below shows a way to check if a URL address syntax is valid (this regular expression
+                    also allows dashes in the URL). If the URL address syntax is not valid, then store an error
+                    message</p>
+                <div class="example-div">
+                    <h4>syntax</h4>
+<pre>
+input($_POST["website"]);
+"/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;] * [-a-z0-9+&@#\/%=~_|]/i",$website)) {
+nvalid URL";
+</pre>   
+                </div>
+            </div>
+            <div class="main-ind-topic">
+                <h3>PHP - Validate Name, E-mail, and URL</h3>
+                <p>Now, the script looks like this:</p>
                 <div class="example-div">
                     <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
+                    <pre>
+&lt?php
+// define variables and set to empty values
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+} else {
+$name = test_input($_POST["name"]);
+// check if name only contains letters and whitespace
+if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+    $nameErr = "Only letters and white space allowed";
+}
+}
+
+if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+} else {
+    $email = test_input($_POST["email"]);
+    
+// check if e-mail address is well-formed
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $emailErr = "Invalid email format";
+}
+}
+
+if (empty($_POST["website"])) {
+    $website = "";
+} else {
+    $website = test_input($_POST["website"]);
+
+// check if URL address syntax is valid (this regular expression also allows dashes in the URL)
+if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+    $websiteErr = "Invalid URL";
+}
+}
+
+if (empty($_POST["comment"])) {
+    $comment = "";
+} else {
+$comment = test_input($_POST["comment"]);
+}
+
+if (empty($_POST["gender"])) {
+    $genderErr = "Gender is required";
+} else {
+    $gender = test_input($_POST["gender"]);
+}
+}
+?>
+</pre>
+                    <button class="btn"><a
+                            href="https://tryphp.w3schools.com/showphp.php?filename=demo_form_validation_special"
+                            target="_blank">Try it yourself</a></button>
                 </div>
             </div>
         </section>
 
-        <section class="main-section">
-            <header id="Php_switch"></header>
+        <section class="main-section" id="Php_Form_Complete">
+            <header>PHP Form Complete</header>
             <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
+                <h3>PHP - Keep The Values in The Form</h3>
+                <p>To show the values in the input fields after the user hits the submit button, we add a little PHP
+                    script inside the value attribute of the following input fields: name, email, and website. In the
+                    comment textarea field, we put the script between the &lttextarea> and &lt/textarea> tags. The
+                    little
+                    script outputs the value of the $name, $email, $website, and $comment variables. </p>
+                <p>Then, we also need to show which radio button that was checked. For this, we must manipulate the
+                    checked attribute (not the value attribute for radio buttons):</p>
                 <div class="example-div">
                     <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
+                    <pre>
+Name: &ltinput type="text" name="name" value="&lt?php echo $name;?>">
+
+E-mail: &ltinput type="text" name="email" value="&lt?php echo $email;?>">
+
+Website: &ltinput type="text" name="website" value="&lt?php echo $website;?>">
+
+Comment: &lttextarea name="comment" rows="5" cols="40">&lt?php echo $comment;?>&lt/textarea>
+
+Gender:
+&ltinput type="radio" name="gender"
+&lt?php if (isset($gender) && $gender=="female") echo "checked";?>
+value="female">Female
+&ltinput type="radio" name="gender"
+&lt?php if (isset($gender) && $gender=="male") echo "checked";?>
+value="male">Male
+&ltinput type="radio" name="gender"
+&lt?php if (isset($gender) && $gender=="other") echo "checked";?>
+value="other">Other
+</pre>
+
                 </div>
             </div>
         </section>
-
-        <section class="main-section">
-            <header id="Php_Loops"></header>
-            <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
-                <div class="example-div">
-                    <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
-                </div>
-            </div>
-        </section>
-
-        <section class="main-section">
-            <header id="Php_Functions"></header>
-            <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
-                <div class="example-div">
-                    <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
-                </div>
-            </div>
-        </section>
-
-        <section class="main-section">
-            <header id="Php_Arrays"></header>
-            <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
-                <div class="example-div">
-                    <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
-                </div>
-            </div>
-        </section>
-
-        <section class="main-section">
-            <header id="Php_Superglobals"></header>
-            <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
-                <div class="example-div">
-                    <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
-                </div>
-            </div>
-        </section>
-
-        <section class="main-section">
-            <header id="Php_RegEx"></header>
-            <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
-                <div class="example-div">
-                    <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
-                </div>
-            </div>
-        </section>
-
-        <section class="main-section">
-            <header id="Php_Form_Handling"></header>
-            <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
-                <div class="example-div">
-                    <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
-                </div>
-            </div>
-        </section>
-
-        <section class="main-section">
-            <header id="Php_Form_Validation"></header>
-            <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
-                <div class="example-div">
-                    <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
-                </div>
-            </div>
-        </section>
-
-        <section class="main-section">
-            <header id="Php_Form_Required"></header>
-            <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
-                <div class="example-div">
-                    <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
-                </div>
-            </div>
-        </section>
-
-        <section class="main-section">
-            <header id="Php_Form_URL/E-mail"></header>
-            <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
-                <div class="example-div">
-                    <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
-                </div>
-            </div>
-        </section>
-
-        <section class="main-section">
-            <header id="Php_Form_Complete"></header>
-            <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
-                <div class="example-div">
-                    <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
-                </div>
-            </div>
-        </section>
-
-        <section class="main-section">
-            <header id="Php_Form_Validation"></header>
-            <div class="main-ind-topic">
-                <h3></h3>
-                <p></p>
-                <div class="syntax-div">
-                    <pre></pre>
-                </div>
-                <div class="example-div">
-                    <h4>Example</h4>
-                    <pre></pre>
-                    <button class="btn"><a href="" target="_blank">Try it yourself</a></button>
-                </div>
-            </div>
-        </section> -->
 
     </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
