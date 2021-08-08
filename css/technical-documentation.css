@@ -198,7 +198,30 @@ body a {
     transform: translate(10px);
 }
 
+
 /* ----- main-document end ------  */
+
+/* ----- footer start ------  */
+footer{
+    margin:1rem 0 2rem 350px;
+    width: 60%;
+    text-align: center;
+}
+
+footer *{
+    padding:.8rem .4rem;
+}
+
+footer a{
+    color: #ff307c;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* ----- footer end ------  */
+
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -231,6 +254,11 @@ body a {
     }
     .body-header-div1 p:nth-child(4n) {
         display: none;
+    }
+
+    footer{
+        width: 90%;
+        margin:1rem auto 2rem;
     }
 }
 
