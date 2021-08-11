@@ -5,3 +5,32 @@
     maring:0;
     box-sizing: border-box;
 }
+
+
+body a{
+    text-decoration:none;
+}
+
+#navbar{ 
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.nav-div-left{
+    padding-left:1rem;
+    font-size:1.5rem;
+}
+
+.nav-div-right{
+    display: flex;
+    padding-right:1rem;
+}
+
+.nav-div-right a{
+    padding:1.5rem 1rem;
+    font-size:1.5rem;
+    color:black;
+}
