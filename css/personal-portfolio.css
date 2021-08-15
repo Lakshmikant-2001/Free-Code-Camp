@@ -28,7 +28,7 @@ body a {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #fff;
+    background: #24a7e4;
 }
 
 /* --- global end ---  */
@@ -194,7 +194,7 @@ body a {
     color: black;
     font-weight:bold;
     padding:.5rem 2rem;
-    font-size:1rem;
+    font-size:1.1rem;
     border:3px solid #30acff;
     position: relative;
     margin:0 .3rem 1rem;
