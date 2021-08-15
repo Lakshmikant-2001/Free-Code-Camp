@@ -12,4 +12,5 @@
     </li>
     <li><a href="https://fcc-web.netlify.app/Product-Landing.html">Product Landing</a></li>
     <li><a href="https://fcc-web.netlify.app/Technical-Documentation.html">Technical Documentation</a></li>
+    <li><a href="https://fcc-web.netlify.app/Personal-Portfolio.html">Personal Portfolio</a></li>
 </ul>
