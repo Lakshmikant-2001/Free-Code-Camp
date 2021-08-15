@@ -152,7 +152,7 @@ body a {
 
 #projects h1 {
     font-size: 2.5rem;
-    margin: 5rem 1rem;
+    margin: 5rem 1rem 2rem;
     width: 100%;
     text-align: center;
 }
@@ -237,7 +237,6 @@ body a {
     color: #b0b8bb;
 }
 
-
 #contact a:hover {
     color: #fff;
 }
@@ -245,7 +244,7 @@ body a {
 #contact header {
     font-size: 2rem;
     margin: 4rem 0.5rem 0;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #contact main {
@@ -259,7 +258,7 @@ body a {
 #contact main div {
     display: flex;
     align-items: center;
-    margin: 1rem 1.5rem;
+    margin: 1rem 1.5rem 1.2rem;
     transition: transform .3s ease-in;
     cursor: pointer;
 }
@@ -281,26 +280,134 @@ body a {
 
 #contact footer {
     align-self: flex-end;
-    display:flex;
+    display: flex;
     font-size: 1rem;
     margin: 1rem 2rem 2rem;
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bold;
 }
 
 #contact footer a {
     color: #b0b8bb;
     transition: color .3s ease-in;
-    margin-left:.5rem;
+    margin-left: .5rem;
 }
 
 /* ---- footer end ----  */
 
 @media (max-width:731px) {
     #welcome-section {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        padding-top: 15rem;
     }
     .name h1 {
-        font-size: 3.5rem;
+        font-size: 3.3rem;
+    }
+}
+
+@media (max-width:470px) {
+    #welcome-section {
+        font-size: 1.7rem;
+        padding-top: 16rem;
+    }
+    .name h1 {
+        font-size: 2.3rem;
+    }
+    .nav-div-left {
+        display: none;
+    }
+
+    #projects h1 {
+        font-size: 2rem;
+        margin-top:3.5rem;
+    }
+    .project-card {
+        width: 90%;
+        min-width: 300px;
+        margin: 2rem;
+    }
+    .project-title {
+        font-size: 1.3rem;
+    }
+    .project-link {
+        padding: 0.3rem 1.5rem;
+        font-size: 0.95rem;
+    }
+    #contact header {
+        font-size: 1.7rem;
+        margin-top: 2.5rem;
+    }
+    #contact main {
+        margin: 1.5rem .5rem;
+    }
+    #contact main div {
+        margin: 1rem;
+    }
+    #contact main div a {
+        font-size: 1.3rem;
+    }
+    #contact main div img {
+        width: 35px;
+    }
+    #contact footer {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width:340px) {
+    .nav-div-right a {
+        font-size: 1rem;
+    }
+
+    #welcome-section {
+        font-size: 1.32rem;
+        padding-top: 16rem;
+    }
+
+    .name h1 {
+        font-size: 2rem;
+    }
+
+    .project-card {
+        width: 90%;
+        min-width: 270px;
+    }
+
+    .project-title {
+        font-size: 1.1rem;
+    }
+
+    .project-link {
+        padding: 0.25rem 1.4rem;
+        font-size: 0.85rem;
+    }
+    #contact header {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    #contact main {
+        margin: 1.5rem .3rem;
+    }
+
+    #contact main div a {
+        font-size: 1.1rem;
+    }
+
+    #contact main div img {
+        width: 30px;
+    } 
+     #contact footer {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width:310px) {
+    .project-card {
+        width: 90%;
+        min-width: 250px;
+    }
+    .project-title {
+        font-size: 1rem;
     }
 }
